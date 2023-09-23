@@ -53,6 +53,9 @@ chessBoard[k] = elem ;
  if (j > 8 ){  i ++ ;  j = 1 }
 }
 
+let currentDiv ; 
+let previousDiv ;
+
 
 let arrayLoop = function(div,row,column,r,c,validMovesArray){
   
