@@ -1,0 +1,220 @@
+body{ box-sizing: border-box;
+     }
+.navigation{ display: flex;
+flex-direction: row;   
+
+margin-left: 16px
+
+;}
+.buttonDiv{ background-color: red;
+height: 25px;
+width: 70px;
+margin-left: 50px;
+border-radius: 10px;
+margin-right: 45px;
+text-align: center;
+text-decoration: double;
+text-align: center;
+padding: 5px;
+padding-top: 7px;
+
+color: white;}
+
+
+
+.chessBoard{ display: grid;
+     width: 64px;
+     grid-template-columns: repeat(8,45px);
+     grid-template-rows: repeat(8,45px);
+     margin: 20px;
+     transform-origin:300px;
+     
+    }
+.whiteBox{ background-color:wheat; 
+border: 1px solid white;}
+.blackBox { background-color: skyblue;
+border: 1px solid white;}
+.blackPiece{ 
+            display: grid;
+            grid-template-columns: repeat(15,2px);
+            grid-template-rows: repeat(15,2px);
+            margin: 6px;
+
+        }
+.whitePiece{ 
+            display: grid;
+            grid-template-columns: repeat(15,2px);
+            grid-template-rows: repeat(15,2px);
+            margin: 6px;
+
+        }
+.blackPiece > div{ background-color: black;
+                   }
+.whitePiece > div{ background-color:white;
+                   }
+
+
+        /* rook style */
+
+
+
+.rook .block1  { 
+        grid-column:  3 / 14;
+        grid-row: 15 / 16;
+     }
+.rook .block2  { 
+        grid-column:  4 / 13;
+        grid-row: 14 / 15;
+     }
+.rook .block3 { grid-column: 6 /11;
+       grid-row: 8 / 14;
+     }
+.rook .block4 { grid-column: 5 / 12;
+       grid-row: 4 / 8;}
+
+
+       /* knight style */
+
+
+.knight .block1 {
+        grid-column: 3 / 14;
+        grid-row: 14 / 16;
+       }
+     
+.knight .block2  { 
+        grid-column:  6 / 14;
+        grid-row: 13 / 14;
+       }
+.knight .block3 { 
+        grid-column: 3 /9;
+        grid-row: 9 / 13;
+       }
+.knight .block4 { 
+        grid-column: 3 / 14;
+        grid-row: 8/ 9;
+       }
+.knight .block5 { 
+        grid-column: 3 / 15;
+        grid-row: 5 / 8;
+       }
+.knight .block6 { 
+        grid-column: 3 / 10;
+        grid-row: 4 / 5;
+       }
+
+
+
+       /* bishop style */
+
+
+       
+.bishop .block1 {
+     grid-column: 3 / 14;
+     grid-row: 15 / 16;
+}
+ 
+.bishop .block2  { 
+     grid-column:  5 / 12;
+     grid-row: 12 / 15;
+    }
+.bishop .block3 { 
+     grid-column: 6 /11;
+     grid-row: 9 / 12;
+    }
+.bishop .block4 { 
+     grid-column: 7 / 10;
+     grid-row: 6 / 9;
+    }
+.bishop .block5 { 
+     grid-column: 8 / 9;
+     grid-row: 4 / 6;
+    }
+
+
+
+          /* king style */
+
+
+.king  .block1 { 
+                grid-column: 2 /15;
+                grid-row: 11 / 16;
+        }
+.king  .block2 { 
+                grid-column: 2 / 3;
+                grid-row: 9/ 11;
+        }
+.king  .block3 { 
+                grid-column: 4 / 5;
+                grid-row: 9 / 11;
+        }
+.king  .block4 { 
+                grid-column: 4 / 7;
+                grid-row: 5 / 8;
+        }
+.king  .block5 { 
+                grid-column: 7 / 10;
+                grid-row: 2 / 11;
+        }
+.king  .block6 { 
+                grid-column: 10 / 13;
+                grid-row: 5 / 8 ;
+        }
+.king  .block7 { 
+                grid-column: 12 / 13;
+                grid-row: 9 / 11;
+        } 
+.king  .block8 { 
+                grid-column: 14 / 15;
+                grid-row: 9 / 11;
+        } 
+
+
+        /* queen style */
+
+
+  .queen .block1 { 
+                grid-column: 2 /15;
+                grid-row: 11 / 16;
+               }
+  .queen .block2 { 
+                grid-column: 2 / 3;
+                grid-row: 5/ 11;
+               }
+  .queen .block3 { 
+                grid-column: 4 / 5;
+                grid-row: 5 / 11;
+               }
+  .queen .block4 { 
+                grid-column: 6 / 7;
+                grid-row: 5 / 11;
+               } 
+  .queen .block5 { 
+                grid-column: 8 / 9;
+                grid-row: 5 / 11;
+               }
+  .queen .block6 { 
+                grid-column: 10 / 11;
+                grid-row: 5 / 11;
+               }
+  .queen .block7 { 
+                grid-column: 12 / 13;
+                grid-row: 5 / 11;
+               }
+  .queen .block8 { 
+                grid-column: 14 / 15;
+                grid-row: 5 / 11;
+               } 
+
+
+               /* pawn style */
+
+
+.pawn .block1  { 
+                grid-column:  6 / 11;
+                grid-row: 13 / 16;
+             }
+.pawn .block2 { grid-column: 7 /10;
+               grid-row: 11 / 13;
+             }
+.pawn .block3 { grid-column: 8 / 9;
+               grid-row: 10 / 11;}
